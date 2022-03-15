@@ -406,8 +406,17 @@ $(document).ready(function () {
         let spouse_email = $(this).find('input[name="spouse-email"]');
 
         // console.log('аякс пошел', user_name.val(), user_tel.val(), user_email.val(), $(this));
+
+        let formElements = [];
+        let formFields = Array.from(event.target.elements);
+        formFields.forEach((input) => {
+          let inputName = input.getAttribute("name").replaceAll("-", "_");
+          formElements[inputName] = input.value;
+        });
+        console.log(formElements);
+
         $.ajax({
-          url: "send.php",
+          // url: "send.php",
           type: "POST",
           dataType: "json",
           data: {
@@ -676,8 +685,8 @@ if (ANSWERS.get() === null) {
   ANSWERS.data = ANSWERS.get();
 } else {
   ANSWERS.data = ANSWERS.get();
-  ANSWERS.restore();
-  ANSWERS.save();
+  // ANSWERS.restore();
+  // ANSWERS.save();
 }
 // $('.question').find('input').on('change', function() {
 //   setTimeout(() => {
@@ -705,3 +714,38 @@ $(".question__button").on("click", function () {
 // })
 
 ANSWERS.save();
+
+const quizStarter = document.querySelector(".button__start-quiz");
+
+quizStarter.addEventListener("click", async (event) => {
+  let quizStarterData = {};
+  const quizStarterCard = document.querySelector(
+    ".question-credits--your-contacts"
+  );
+  quizStarterCard.querySelectorAll(".question-input").forEach((input) => {
+    quizStarterData[input.getAttribute("name").replaceAll("-", "_")] = {
+      question: input.getAttribute("data-question"),
+      answer: input.value,
+    };
+  });
+
+  let quizPayload = new URLSearchParams();
+
+  for (key in quizStarterData) {
+    quizPayload.append(key, quizStarterData[key]);
+  }
+  console.log(quizPayload.toString());
+
+  const response = await fetch("begin-quiz.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(quizStarterData),
+  });
+
+  const json = await response.json();
+
+  document.querySelector(".quiz-results__user-id").value = json.contact.data;
+  document.querySelector(".quiz-results__deal-id").value = json.deal.data;
+});

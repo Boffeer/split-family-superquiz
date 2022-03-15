@@ -43,7 +43,26 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="header">
-      <form action="" class="quiz-results">
+      <form action="" id="quiz-results" class="quiz-results">
+        <input
+          class="quiz-results__user-id"
+          type="text"
+          name="user_id"
+          data-question="id"
+        />
+        <input
+          class="quiz-results__deal-id"
+          type="text"
+          name="user_id"
+          data-question="id"
+        />
+
+        <input type="text" name="user-name" data-question="Имя" />
+        <input type="text" name="user-tel" data-question="Телефон" />
+        <input type="text" name="user-email" data-question="Email" />
+        <br />
+        <br />
+
         <input type="text" name="question-divorce--plan" />
         <input type="text" name="question-divorce--relations" />
         <input type="text" name="question-divorce--divorce-date" />
@@ -134,9 +153,6 @@
         <br />
         <br />
 
-        <input type="text" name="user-name" />
-        <input type="text" name="user-tel" />
-        <input type="text" name="user-email" />
         <input type="text" name="spouse-name" />
         <input type="text" name="spouse-tel" />
         <input type="text" name="spouse-email" />
@@ -145,6 +161,26 @@
 
     <main class="main">
       <div class="questions-vault">
+        <article
+          class="question question-divorce question-divorce--plan"
+          data-name="question-divorce--plan"
+        >
+          <h3 class="question__title">Вы планируете развод?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-divorce--relations"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-divorce--divorce-date"
+          >
+            Я уже в разводе
+          </button>
+        </article>
         <article
           class="question question-divorce question-divorce--relations"
           data-name="question-divorce--relations"
@@ -961,7 +997,7 @@
           <button
             type="button"
             class="question__button question__button--yes question__button--textarea"
-            data-next="question-credits--your-contacts"
+            data-next="question-credits--spouse-contacts"
             disabled
           >
             Далее
@@ -1528,58 +1564,14 @@
           <button
             type="button"
             class="question__button question__button--yes question__button--textarea"
-            data-next="question-credits--your-contacts"
+            data-next="question-credits--spouse-contacts"
             disabled
           >
             Далее
           </button>
           <!-- <button type="button" class="question__button question__button--yes question__button--textarea question__button--complete" data-next="question-credits--your-contacts>Отправить анкету</button> -->
         </article>
-        <article
-          class="question question-credits question-credits--your-contacts"
-          data-name="question-credits--your-contacts"
-        >
-          <h3 class="question__title">
-            Заполните, пожалуйста, контактные данные для отправки вам плана
-            развода
-          </h3>
-          <div class="question-input__fileds">
-            <div class="question-input__wrap question-input__wrap--name">
-              <input
-                class="question-input question-input--name"
-                name="user-name"
-                type="text"
-                placeholder="Ваше ФИО"
-              />
-            </div>
-            <div class="question-input__wrap question-input__wrap--tel">
-              <input
-                class="question-input question-input--phone"
-                name="user-tel"
-                type="tel"
-                placeholder="Ваш телефон"
-                maxlength="25"
-                minlength="10"
-                inputmode="numeric"
-              />
-            </div>
-            <div class="question-input__wrap question-input__wrap--email">
-              <input
-                class="question-input question-input--email"
-                name="user-email"
-                type="email"
-                placeholder="Ваш email"
-              />
-            </div>
-          </div>
-          <button
-            type="button"
-            class="question__button question__button--yes question__button--contacts"
-            data-next="question-credits--spouse-contacts"
-          >
-            Далее
-          </button>
-        </article>
+
         <article
           class="question question-credits question-credits--spouse-contacts"
           data-name="question-credits--spouse-contacts"
@@ -1629,30 +1621,74 @@
             <a href="./privacy.html">политикой конфиденциальности</a>
           </p>
         </article>
+        <article
+          class="question question-credits question-credits--calendly"
+          data-name="question-credits--calendly"
+        >
+          <h3 class="question__title">
+            Выберите день и время для консультации, где вам расшифруют ваши
+            результаты
+          </h3>
+          <p class="question-privacy">
+            Нажимая на кнопку «Отправить анкету», я подтвержаю свое согласие с
+            <a href="./privacy.html">политикой конфиденциальности</a>
+          </p>
+        </article>
         <article class="question question-credits question-credits--thanks">
           <h3 class="question__title">Спасибо за заполнение анкеты!</h3>
         </article>
       </div>
       <section class="questions-active divorce">
         <article
-          class="question question-divorce question-divorce--plan question--visible question--current"
-          data-name="question-divorce--plan"
+          class="question question-credits question-credits--your-contacts question--visible question--current"
+          data-name="question-credits--your-contacts"
         >
-          <h3 class="question__title">Вы планируете развод?</h3>
+          <h3 class="question__title">
+            Заполните, пожалуйста, контактные данные для отправки вам плана
+            развода
+          </h3>
+          <div class="question-input__fileds">
+            <div class="question-input__wrap question-input__wrap--name">
+              <input
+                class="question-input question-input--name"
+                name="user-name"
+                type="text"
+                placeholder="Ваше ФИО"
+                data-question="Имя"
+              />
+            </div>
+            <div class="question-input__wrap question-input__wrap--tel">
+              <input
+                class="question-input question-input--phone"
+                name="user-tel"
+                type="tel"
+                placeholder="Ваш телефон"
+                maxlength="25"
+                minlength="10"
+                inputmode="numeric"
+                data-question="Телефон"
+              />
+            </div>
+            <!-- <div class="question-input__wrap question-input__wrap--email">
+              <input
+                class="question-input question-input--email"
+                name="user-email"
+                type="email"
+                placeholder="Ваш email"
+              />
+            </div> -->
+          </div>
           <button
             type="button"
-            class="question__button question__button--yes question__button--pager"
-            data-next="question-divorce--relations"
+            class="question__button question__button--yes question__button--contacts button__start-quiz"
+            data-next="question-divorce--plan"
           >
-            Да
+            Далее
           </button>
-          <button
-            type="button"
-            class="question__button question__button--no question__button--pager"
-            data-next="question-divorce--divorce-date"
-          >
-            Я уже в разводе
-          </button>
+          <p class="question-privacy">
+            Нажимая на кнопку «Далее», я подтвержаю свое согласие с
+            <a href="./privacy.html">политикой конфиденциальности</a>
+          </p>
         </article>
       </section>
     </main>
