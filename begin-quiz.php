@@ -134,6 +134,7 @@ $deal = array(
 	'currency' => '1',
 	'stage' => $all_deals_json->data[0]->id,
 	'd_close' => $today,
+	'contact' => $new_contact->data
 	// 'stage' => 0,
 );
 $deal_json = json_encode($deal);

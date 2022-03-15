@@ -224,6 +224,7 @@ $(document).ready(function () {
     if (formSubmitted == 0) {
       $(this).on("submit", function (event) {
         event.preventDefault();
+        let user_id = $(this).find('input[name="user_id"]');
         let question_divorce__plan = $(this).find(
           'input[name="question-divorce--plan"]'
         );
@@ -413,13 +414,14 @@ $(document).ready(function () {
           let inputName = input.getAttribute("name").replaceAll("-", "_");
           formElements[inputName] = input.value;
         });
-        console.log(formElements);
+        // console.log(formElements);
 
         $.ajax({
-          // url: "send.php",
+          url: "send.php",
           type: "POST",
           dataType: "json",
           data: {
+            user_id: user_id.val(),
             question_divorce__plan: question_divorce__plan.val(),
             question_divorce__relations: question_divorce__relations.val(),
             question_divorce__divorce_date:
@@ -734,7 +736,7 @@ quizStarter.addEventListener("click", async (event) => {
   for (key in quizStarterData) {
     quizPayload.append(key, quizStarterData[key]);
   }
-  console.log(quizPayload.toString());
+  // console.log(quizPayload.toString());
 
   const response = await fetch("begin-quiz.php", {
     method: "POST",
