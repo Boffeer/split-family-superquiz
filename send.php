@@ -439,7 +439,7 @@ $contact_url = 'https://wirecrm.com/api/v1/contacts';
 
 $deal_description = str_replace('<br>', "\n", strip_tags($message, '<br>'));
 $deal = array(
-	'name' => $contact_name . ': проешл квиз',
+	'name' => $contact_name . ': прошел квиз',
 	'description' => $deal_description,
 	'currency' => '1',
 	'stage' => $all_deals_json->data[0]->id,
