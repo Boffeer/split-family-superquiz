@@ -1,839 +1,1691 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="yandex-verification" content="">
-		<meta name="google-site-verification" content="">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="yandex-verification" content="" />
+    <meta name="google-site-verification" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-		<title>Анкета</title>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-KX65CB8');</script>
-		<!-- End Google Tag Manager -->
-		<link rel="stylesheet" href="./css/fonts.css">
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/datepicker.css">
-		<link rel="stylesheet" href="./css/normalize.css">
-		<link rel="stylesheet" href="./assets/poppa/poppa.min.css">
-		<link rel="stylesheet" href="./css/index.min.css">
-	</head>
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX65CB8"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<header class="header">
-			<form action="" class="quiz-results">
-				<input type="text" name="question-divorce--plan">
-				<input type="text" name="question-divorce--relations">
-				<input type="text" name="question-divorce--divorce-date">
-				<input type="text" name="question-divorce--date-no-relations">
-				<input type="text" name="question-divorce--together">
-				<br>
-				<br>
+    <title>Анкета</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KX65CB8");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/datepicker.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./assets/poppa/poppa.min.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KX65CB8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+      <form action="" class="quiz-results">
+        <input type="text" name="question-divorce--plan" />
+        <input type="text" name="question-divorce--relations" />
+        <input type="text" name="question-divorce--divorce-date" />
+        <input type="text" name="question-divorce--date-no-relations" />
+        <input type="text" name="question-divorce--together" />
+        <br />
+        <br />
 
-				<input type="text" name="question-children--have">
-				<input type="text" name="question-children--age">
-				<input type="text" name="question-children--live-with-you">
-				<input type="text" name="question-children--dispute-livingplace">
-				<input type="text" name="question-children--livingplace-list">
-				<input type="text" name="question-children--dispute-communication">
-				<input type="text" name="question-children--communication-schedule">
-				<br>
-				<br>
+        <input type="text" name="question-children--have" />
+        <input type="text" name="question-children--age" />
+        <input type="text" name="question-children--live-with-you" />
+        <input type="text" name="question-children--dispute-livingplace" />
+        <input type="text" name="question-children--livingplace-list" />
+        <input type="text" name="question-children--dispute-communication" />
+        <input type="text" name="question-children--communication-schedule" />
+        <br />
+        <br />
 
-				<input type="text" name="question-alimoney--dispute">
-				<input type="text" name="question-alimoney--recovered">
-				<input type="text" name="question-alimoney--amount">
-				<input type="text" name="question-alimoney--payer-official-income">
-				<input type="text" name="question-alimoney--payer-income">
-				<input type="text" name="question-alimoney--payer-unofficial">
-				<input type="text" name="question-alimoney--payer-unemployed">
-				<input type="text" name="question-alimoney--payer-businessman">
-				<input type="text" name="question-alimoney--payer-credit">
-				<input type="text" name="question-alimoney--dispute-result">
-				<input type="text" name="question-alimoney--payer-children-amount">
-				<input type="text" name="question-alimoney--your-additional-expenses">
-				<input type="text" name="question-alimoney--your-expenses-education">
-				<input type="text" name="question-alimoney--your-expenses-rehabilitation">
-				<input type="text" name="question-alimoney--your-expenses-home">
-				<input type="text" name="question-alimoney--your-expenses-children">
-				<input type="text" name="question-alimoney--your-expenses-children-about">
-				<input type="text" name="question-alimoney--maintenanse">
-				<input type="text" name="question-alimoney--little-children">
-				<input type="text" name="question-alimoney--maintenanse-disabled">
-				<input type="text" name="question-alimoney--you-disabled">
-				<input type="text" name="question-alimoney--you-need-help">
-				<input type="text" name="question-alimoney--maintenanse-amount">
-				<br>
-				<br>
+        <input type="text" name="question-alimoney--dispute" />
+        <input type="text" name="question-alimoney--recovered" />
+        <input type="text" name="question-alimoney--amount" />
+        <input type="text" name="question-alimoney--payer-official-income" />
+        <input type="text" name="question-alimoney--payer-income" />
+        <input type="text" name="question-alimoney--payer-unofficial" />
+        <input type="text" name="question-alimoney--payer-unemployed" />
+        <input type="text" name="question-alimoney--payer-businessman" />
+        <input type="text" name="question-alimoney--payer-credit" />
+        <input type="text" name="question-alimoney--dispute-result" />
+        <input type="text" name="question-alimoney--payer-children-amount" />
+        <input type="text" name="question-alimoney--your-additional-expenses" />
+        <input type="text" name="question-alimoney--your-expenses-education" />
+        <input
+          type="text"
+          name="question-alimoney--your-expenses-rehabilitation"
+        />
+        <input type="text" name="question-alimoney--your-expenses-home" />
+        <input type="text" name="question-alimoney--your-expenses-children" />
+        <input
+          type="text"
+          name="question-alimoney--your-expenses-children-about"
+        />
+        <input type="text" name="question-alimoney--maintenanse" />
+        <input type="text" name="question-alimoney--little-children" />
+        <input type="text" name="question-alimoney--maintenanse-disabled" />
+        <input type="text" name="question-alimoney--you-disabled" />
+        <input type="text" name="question-alimoney--you-need-help" />
+        <input type="text" name="question-alimoney--maintenanse-amount" />
+        <br />
+        <br />
 
-				<input type="text" name="question-money--jointly-property">
-				<input type="text" name="question-money--disput-moments">
-				<input type="text" name="question-money--marriage-agreement">
-				<input type="text" name="question-money--jointly-property-list">
-				<input type="text" name="question-money--jointly-property-cost">
-				<input type="text" name="question-money--jointly-money">
-				<input type="text" name="question-money--maternity-capital">
-				<input type="text" name="question-money--wifes-personal">
-				<input type="text" name="question-money--mans-personal">
-				<input type="text" name="question-money--credit-money">
-				<input type="text" name="question-money--any-property">
-				<input type="text" name="question-money--repaired-estate">
-				<input type="text" name="question-money--repaired-estate-cost">
-				<input type="text" name="question-money--repaired-estate-additional-cost">
-				<input type="text" name="question-money--repaired-estate-jointly">
-				<input type="text" name="question-money--repaired-estate-maternity">
-				<input type="text" name="question-money--repaired-estate-wifes-personal">
-				<input type="text" name="question-money--repaired-estate-mans-personal">
-				<input type="text" name="question-money--repaired-estate-credit">
-				<input type="text" name="question-money--repaired-estate-any">
-				<br>
-				<br>
+        <input type="text" name="question-money--jointly-property" />
+        <input type="text" name="question-money--disput-moments" />
+        <input type="text" name="question-money--marriage-agreement" />
+        <input type="text" name="question-money--jointly-property-list" />
+        <input type="text" name="question-money--jointly-property-cost" />
+        <input type="text" name="question-money--jointly-money" />
+        <input type="text" name="question-money--maternity-capital" />
+        <input type="text" name="question-money--wifes-personal" />
+        <input type="text" name="question-money--mans-personal" />
+        <input type="text" name="question-money--credit-money" />
+        <input type="text" name="question-money--any-property" />
+        <input type="text" name="question-money--repaired-estate" />
+        <input type="text" name="question-money--repaired-estate-cost" />
+        <input
+          type="text"
+          name="question-money--repaired-estate-additional-cost"
+        />
+        <input type="text" name="question-money--repaired-estate-jointly" />
+        <input type="text" name="question-money--repaired-estate-maternity" />
+        <input
+          type="text"
+          name="question-money--repaired-estate-wifes-personal"
+        />
+        <input
+          type="text"
+          name="question-money--repaired-estate-mans-personal"
+        />
+        <input type="text" name="question-money--repaired-estate-credit" />
+        <input type="text" name="question-money--repaired-estate-any" />
+        <br />
+        <br />
 
+        <input type="text" name="question-credits--obligations" />
+        <input type="text" name="question-credits--obligations-target" />
+        <input type="text" name="question-credits--obligations-rest" />
+        <input type="text" name="question-credits--obligations-payer" />
+        <input type="text" name="question-credits--property-division" />
+        <br />
+        <br />
 
-				<input type="text" name="question-credits--obligations">
-				<input type="text" name="question-credits--obligations-target">
-				<input type="text" name="question-credits--obligations-rest">
-				<input type="text" name="question-credits--obligations-payer">
-				<input type="text" name="question-credits--property-division">
-				<br>
-				<br>
+        <input type="text" name="user-name" />
+        <input type="text" name="user-tel" />
+        <input type="text" name="user-email" />
+        <input type="text" name="spouse-name" />
+        <input type="text" name="spouse-tel" />
+        <input type="text" name="spouse-email" />
+      </form>
+    </header>
 
+    <main class="main">
+      <div class="questions-vault">
+        <article
+          class="question question-divorce question-divorce--relations"
+          data-name="question-divorce--relations"
+        >
+          <h3 class="question__title">
+            Фактически брачные отношения прекращены?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-divorce--date-no-relations"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-divorce--together"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-divorce question-divorce--divorce-date"
+          data-name="question-divorce--divorce-date"
+        >
+          <h3 class="question__title">Укажите дату расторжения брака</h3>
+          <div class="input-append date" data-date-format="dd-mm-yyyy">
+            <input class="datepicker" placeholder="дд-мм-гггг" type="text" />
+            <span class="add-on"><i class="icon-th"></i></span>
+          </div>
+          <button
+            type="button"
+            data-title="Сначала заполните дату"
+            class="question__button question__button--yes question__button--datepicker"
+            data-next="question-divorce--date-no-relations"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-divorce question-divorce--date-no-relations"
+          data-name="question-divorce--date-no-relations"
+        >
+          <h3 class="question__title">
+            Укажите дату, с которой вы не ведете общее хозяйство с супругом?
+          </h3>
+          <div class="input-append date" data-date-format="dd-mm-yyyy">
+            <input class="datepicker" placeholder="дд-мм-гггг" type="text" />
+            <span class="add-on"><i class="icon-th"></i></span>
+          </div>
+          <button
+            type="button"
+            data-title="Сначала заполните дату"
+            class="question__button question__button--yes question__button--datepicker"
+            data-next="question-children--have"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-divorce question-divorce--together"
+          data-name="question-divorce--together"
+        >
+          <h3 class="question__title">Вы проживаете совместно?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-children--have"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-divorce--date-no-relations"
+          >
+            Нет
+          </button>
+        </article>
 
-				<input type="text" name="user-name">
-				<input type="text" name="user-tel">
-				<input type="text" name="user-email">
-				<input type="text" name="spouse-name">
-				<input type="text" name="spouse-tel">
-				<input type="text" name="spouse-email">
-			</form>
-		</header>
+        <article
+          class="question question-children question-children--have"
+          data-name="question-children--have"
+        >
+          <h3 class="question__title">У вас есть совместные дети?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-children--age"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--jointly-property"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--age"
+          data-name="question-children--age"
+        >
+          <h3 class="question__title">Укажите имена и возраст детей</h3>
+          <textarea
+            class="form-control"
+            rows="3"
+            placeholder="Ваня - 5, Саша - 7"
+          ></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-children--live-with-you"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--live-with-you"
+          data-name="question-children--live-with-you"
+        >
+          <h3 class="question__title">Дети проживают с вами?</h3>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-children--dispute-livingplace"
+          >
+            Не все
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-children--dispute-livingplace"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-children--dispute-livingplace"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--dispute-livingplace"
+          data-name="question-children--dispute-livingplace"
+        >
+          <h3 class="question__title">
+            Существует между вами и супругом, спор относительно места жительства
+            детей?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-children--livingplace-list"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--dispute"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--livingplace-list"
+          data-name="question-children--livingplace-list"
+        >
+          <h3 class="question__title">
+            Где должны проживать дети по вашему мнению?<br />
+          </h3>
+          <p class="question__subtitle">Распишите поименно</p>
+          <textarea class="form-control" rows="3"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-children--dispute-communication"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--dispute-communication"
+          data-name="question-children--dispute-communication"
+        >
+          <h3 class="question__title">
+            Существует между вами спор относительно общения с детьми?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-children--communication-schedule"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--dispute"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-children question-children--communication-schedule"
+          data-name="question-children--communication-schedule"
+        >
+          <h3 class="question__title">
+            Укажите приемлемый для вас график общения детей (с учетом занятости
+            детей, удаленности проживания) с родителем, который проживает
+            отдельно от детей
+          </h3>
+          <textarea
+            class="form-control"
+            rows="3"
+            placeholder="Каждый понедельник и субботу…"
+          ></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-alimoney--dispute"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
 
-		<main class="main">
-			<div class="questions-vault">
-				<article class="question question-divorce question-divorce--relations" data-name="question-divorce--relations">
-					<h3 class="question__title">
-						Фактически брачные отношения прекращены?
-					</h3>
-					<button
-						type="button"
-						class="question__button question__button--yes question__button--pager"
-						data-next="question-divorce--date-no-relations">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-divorce--together">Нет</button>
-				</article>
-				<article class="question question-divorce question-divorce--divorce-date" data-name="question-divorce--divorce-date">
-					<h3 class="question__title">
-						Укажите дату расторжения брака
-					</h3>
-					<div class="input-append date"
-						data-date-format="dd-mm-yyyy">
-						<input
-							class="datepicker"
-							placeholder="дд-мм-гггг"
-							type="text"
-							>
-						<span class="add-on"><i class="icon-th"></i></span>
-					</div>
-					<button
-						type="button"
-						data-title="Сначала заполните дату"
-						class="question__button question__button--yes question__button--datepicker"
-						data-next="question-divorce--date-no-relations" disabled>Далее</button>
-				</article>
-				<article class="question question-divorce question-divorce--date-no-relations" data-name="question-divorce--date-no-relations">
-					<h3 class="question__title">
-						Укажите дату, с которой вы не ведете общее хозяйство с супругом?
-					</h3>
-					<div class="input-append date"
-						data-date-format="dd-mm-yyyy">
-						<input
-							class="datepicker"
-							placeholder="дд-мм-гггг"
-							type="text"
-							>
-						<span class="add-on"><i class="icon-th"></i></span>
-					</div>
-					<button
-						type="button"
-						data-title="Сначала заполните дату"
-						class="question__button question__button--yes question__button--datepicker"
-						data-next="question-children--have" disabled>Далее</button>
-				</article>
-				<article class="question question-divorce question-divorce--together" data-name="question-divorce--together">
-					<h3 class="question__title">
-						Вы проживаете совместно?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-children--have">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-divorce--date-no-relations">Нет</button>
-				</article>
+        <article
+          class="question question-alimoney question-alimoney--dispute"
+          data-name="question-alimoney--dispute"
+        >
+          <h3 class="question__title">
+            Существует ли между вами спор по алиментным обязательствам?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--recovered"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--jointly-property"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--recovered"
+          data-name="question-alimoney--recovered"
+        >
+          <h3 class="question__title">Алименты уже взысканы?</h3>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--amount"
+          >
+            В твердой денежной сумме
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--payer-official-income"
+          >
+            Алименты не взысканы
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--amount"
+          >
+            В долях от зарплаты
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--amount"
+          data-name="question-alimoney--amount"
+        >
+          <h3 class="question__title">
+            Какую сумму вы получаете (платите) или должны получать (платить)
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="10000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--payer-credit"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-official-income"
+          data-name="question-alimoney--payer-official-income"
+        >
+          <h3 class="question__title">
+            Плательщик алиментов имеет официальный доход?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--payer-income"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--payer-unofficial"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-income"
+          data-name="question-alimoney--payer-income"
+        >
+          <h3 class="question__title">Какая общая сумма его дохода?</h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="40000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--payer-credit"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-unofficial"
+          data-name="question-alimoney--payer-unofficial"
+        >
+          <h3 class="question__title">
+            Плательщик алиментов работает без оформления?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--dispute-result"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--payer-unemployed"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-unemployed"
+          data-name="question-alimoney--payer-unemployed"
+        >
+          <h3 class="question__title">Плательщик алиментов безработный?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--dispute-result"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--payer-businessman"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-businessman"
+          data-name="question-alimoney--payer-businessman"
+        >
+          <h3 class="question__title">Плательщик алиментов предприниматель?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--dispute-result"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--dispute-result"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-credit"
+          data-name="question-alimoney--payer-credit"
+        >
+          <h3 class="question__title">Какая сумма задолженности?</h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="10000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--dispute-result"
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--stepper-alt"
+            data-next="question-alimoney--dispute-result"
+          >
+            Задолженности нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--dispute-result"
+          data-name="question-alimoney--dispute-result"
+        >
+          <h3 class="question__title">
+            Опишите как вы считаете, как должен быть разрешен вопрос по
+            алиментам (сумма, сроки, единовременные выплаты и т.д.)
+          </h3>
+          <textarea class="form-control" rows="5"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-alimoney--payer-children-amount"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--payer-children-amount"
+          data-name="question-alimoney--payer-children-amount"
+        >
+          <h3 class="question__title">
+            Сколько детей у плательщика алиментов от иных отношений?
+          </h3>
+          <input
+            class="question-stepper"
+            value="1"
+            min="0"
+            step="1"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--your-additional-expenses"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--your-additional-expenses"
+          data-name="question-alimoney--your-additional-expenses"
+        >
+          <h3 class="question__title">
+            Какие у вас дополнительные расходы на детей помимо обычного
+            содержания?
+          </h3>
+          <textarea class="form-control" rows="5"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-alimoney--your-expenses-education"
+            disabled
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--textarea-alt"
+            data-next="question-alimoney--maintenanse"
+          >
+            Расходов нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--your-expenses-education"
+          data-name="question-alimoney--your-expenses-education"
+        >
+          <h3 class="question__title">
+            Есть ли дополнительные расходы на образование?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="5000"
+            min="0"
+            step="500"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--your-expenses-rehabilitation"
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--stepper-alt"
+            data-next="question-alimoney--your-expenses-rehabilitation"
+          >
+            Нет расходов на образование
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--your-expenses-rehabilitation"
+          data-name="question-alimoney--your-expenses-rehabilitation"
+        >
+          <h3 class="question__title">
+            Есть ли дополнительные расходы на лечение (реабилитацию)?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="5000"
+            min="0"
+            step="500"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--your-expenses-home"
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--stepper-alt"
+            data-next="question-alimoney--your-expenses-home"
+          >
+            Нет расходов на лечение
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--your-expenses-home"
+          data-name="question-alimoney--your-expenses-home"
+        >
+          <h3 class="question__title">
+            Есть ли дополнительные расходы на жилье?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="10000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--your-expenses-children"
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--stepper-alt"
+            data-next="question-alimoney--your-expenses-children"
+          >
+            Нет расходов на жилье
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--your-expenses-children"
+          data-name="question-alimoney--your-expenses-children"
+        >
+          <h3 class="question__title">
+            Есть ли иные дополнительные <br />расходы на детей?
+          </h3>
+          <textarea
+            class="form-control"
+            rows="3"
+            placeholder="Опишите расходы"
+          ></textarea>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="10000"
+            min="0"
+            step="500"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-alimoney--little-children"
+            disabled
+          >
+            Далее
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--stepper-alt"
+            data-next="question-alimoney--little-children"
+          >
+            Расходов нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--maintenanse"
+          data-name="question-alimoney--maintenanse"
+        >
+          <h3 class="question__title">
+            Претендуете ли вы на ваше содержание от второго супруга?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--little-children"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--jointly-property"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--little-children"
+          data-name="question-alimoney--little-children"
+        >
+          <h3 class="question__title">
+            Вы беременны или находитесь в отпуске по уходу за ребенком до трех
+            лет?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--maintenanse-disabled"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--maintenanse-disabled"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--maintenanse-disabled"
+          data-name="question-alimoney--maintenanse-disabled"
+        >
+          <h3 class="question__title">
+            Вы осуществляете уход за общим ребенком инвалидом?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--you-disabled"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--you-disabled"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--you-disabled"
+          data-name="question-alimoney--you-disabled"
+        >
+          <h3 class="question__title">
+            Вы стали нетрудоспособным до расторжения брака или в течение года с
+            момента расторжения брака?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--you-need-help"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--you-need-help"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--you-need-help"
+          data-name="question-alimoney--you-need-help"
+        >
+          <h3 class="question__title">
+            Вы нуждающийся бывший супруг, достигший пенсионного возраста не
+            позднее, чем через 5 лет с момента расторжения брака, который длился
+            более 10 лет?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-alimoney--maintenanse-amount"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-alimoney--maintenanse-amount"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-alimoney question-alimoney--maintenanse-amount"
+          data-name="question-alimoney--maintenanse-amount"
+        >
+          <h3 class="question__title">
+            Какую сумму вы считаете приемлемой на свое содержание?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="30000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--jointly-property"
+          >
+            Далее
+          </button>
+        </article>
 
-				<article class="question question-children question-children--have" data-name="question-children--have">
-					<h3 class="question__title">
-						У вас есть совместные дети?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-children--age">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-money--jointly-property">Нет</button>
-				</article>
-				<article class="question question-children question-children--age" data-name="question-children--age">
-					<h3 class="question__title">
-						Укажите имена и возраст детей
-					</h3>
-					<textarea class="form-control" rows="3" placeholder="Ваня - 5, Саша - 7"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-children--live-with-you" disabled>Далее</button>
-				</article>
-				<article class="question question-children question-children--live-with-you" data-name="question-children--live-with-you">
-					<h3 class="question__title">
-						Дети проживают с вами?
-					</h3>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-children--dispute-livingplace">Не все</button>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-children--dispute-livingplace">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-children--dispute-livingplace">Нет</button>
-				</article>
-				<article class="question question-children question-children--dispute-livingplace" data-name="question-children--dispute-livingplace">
-					<h3 class="question__title">
-						Существует между вами и супругом, спор относительно места жительства детей?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-children--livingplace-list">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--dispute">Нет</button>
-				</article>
-				<article class="question question-children question-children--livingplace-list" data-name="question-children--livingplace-list">
-					<h3 class="question__title">
-						Где должны проживать дети по вашему мнению?<br>
-					</h3>
-					<p class="question__subtitle">
-						Распишите поименно
-					</p>
-					<textarea class="form-control" rows="3"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-children--dispute-communication" disabled>Далее</button>
-				</article>
-				<article class="question question-children question-children--dispute-communication" data-name="question-children--dispute-communication">
-					<h3 class="question__title">
-						Существует между вами спор относительно общения с детьми?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-children--communication-schedule">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--dispute">Нет</button>
-				</article>
-				<article class="question question-children question-children--communication-schedule" data-name="question-children--communication-schedule">
-					<h3 class="question__title">
-						Укажите приемлемый для вас график общения детей (с учетом занятости детей, удаленности проживания) с родителем, который проживает отдельно от детей
-					</h3>
-					<textarea class="form-control" rows="3" placeholder="Каждый понедельник и субботу…"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-alimoney--dispute" disabled>Далее</button>
-				</article>
+        <article
+          class="question question-money question-money--jointly-property"
+          data-name="question-money--jointly-property"
+        >
+          <h3 class="question__title">
+            У вас существует спор относительно <br /><span
+              class="question__title--tooltip tooltip--jointly"
+              >совместно нажитого имущества</span
+            >?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-money--marriage-agreement"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--disput-moments"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--disput-moments"
+          data-name="question-money--disput-moments"
+        >
+          <h3 class="question__title">
+            Укажите какие спорные моменты существуют у вас при расторжении
+            брака?
+          </h3>
+          <textarea class="form-control" rows="5"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-credits--your-contacts"
+            disabled
+          >
+            Далее
+          </button>
+          <!-- <button type="button" class="question__button question__button--yes question__button--textarea question__button--contacts question__button--complete" data-next="question-credits--your-contacts">Отправить анкету</button> -->
+        </article>
+        <article
+          class="question question-money question-money--marriage-agreement"
+          data-name="question-money--marriage-agreement"
+        >
+          <h3 class="question__title">
+            У вас был заключен брачный договор <br />до или во время брака?
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-money--disput-moments"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--jointly-property-list"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          id="question-money--jointly-property-list"
+          class="question question-money question-money--jointly-property-list"
+          data-name="question-money--jointly-property-list"
+        >
+          <h3 class="question__title">
+            Укажите списком наименования <br />совместно нажитого имущества
+          </h3>
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Квартира, дом, земельный участок, авто, денежные средстав, вклады, инвестсчета, доля в бизнесе, предметы роскоши, бытовая техника, домашние животные, скот"
+          ></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-money--jointly-property-cost"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--jointly-property-cost"
+          data-name="question-money--jointly-property-cost"
+        >
+          <h3 class="question__title">
+            Укажите примерную рыночную стоимость совместно нажитого имущества
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="500000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--jointly-money"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--jointly-money"
+          data-name="question-money--jointly-money"
+        >
+          <h3 class="question__title">
+            Сколько совместно нажитых денежных средств было вложено в
+            приобретение имущества?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--maternity-capital"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--maternity-capital"
+          data-name="question-money--maternity-capital"
+        >
+          <h3 class="question__title">
+            Сколько денежных средств мат. капитала было вложено в приобретение
+            имущества
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--wifes-personal"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--wifes-personal"
+          data-name="question-money--wifes-personal"
+        >
+          <h3 class="question__title">
+            Сколько было вложено личных средств жены от продажи
+            <span class="question__title--tooltip tooltip--personal"
+              >личного имущества</span
+            >?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--mans-personal"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--mans-personal"
+          data-name="question-money--mans-personal"
+        >
+          <h3 class="question__title">
+            Сколько было вложено личных средств мужа от продажи
+            <span class="question__title--tooltip tooltip--personal"
+              >личного имущества</span
+            >?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--credit-money"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--credit-money"
+          data-name="question-money--credit-money"
+        >
+          <h3 class="question__title">
+            Сколько было вложено кредитных средств из все еще не погашенных
+            кредитов?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="1000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--any-property"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--any-property"
+          data-name="question-money--any-property"
+        >
+          <h3 class="question__title">Есть еще совместно нажитое имущество?</h3>
+          <!-- <button type="button" class="question__button question__button--yes question__button--pager" data-next="question-money--jointly-property-list">Да</button> -->
+          <a
+            href="#question-money--jointly-property-list"
+            class="question__anchor question__button--yes question__button--pager"
+            data-next="question-money--jointly-property-list"
+            >Да</a
+          >
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-money--repaired-estate"
+          >
+            Нет
+          </button>
+        </article>
 
-				<article class="question question-alimoney question-alimoney--dispute" data-name="question-alimoney--dispute">
-					<h3 class="question__title">
-						Существует ли между вами спор по алиментным обязательствам?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--recovered">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-money--jointly-property">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--recovered" data-name="question-alimoney--recovered">
-					<h3 class="question__title">
-						Алименты уже взысканы?
-					</h3>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--amount">В твердой денежной сумме</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--payer-official-income">Алименты не взысканы</button>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--amount">В долях от зарплаты</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--amount" data-name="question-alimoney--amount">
-					<h3 class="question__title">
-						Какую сумму вы получаете (платите) или должны получать (платить)
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="10000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--payer-credit">Далее</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-official-income" data-name="question-alimoney--payer-official-income">
-					<h3 class="question__title">
-						Плательщик алиментов имеет официальный доход?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--payer-income">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--payer-unofficial">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-income" data-name="question-alimoney--payer-income">
-					<h3 class="question__title">
-						Какая общая сумма его дохода?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="40000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--payer-credit">Далее</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-unofficial" data-name="question-alimoney--payer-unofficial">
-					<h3 class="question__title">
-						Плательщик алиментов работает без оформления?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--dispute-result">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--payer-unemployed">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-unemployed" data-name="question-alimoney--payer-unemployed">
-					<h3 class="question__title">
-						Плательщик алиментов безработный?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--dispute-result">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--payer-businessman">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-businessman" data-name="question-alimoney--payer-businessman">
-					<h3 class="question__title">
-						Плательщик алиментов предприниматель?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--dispute-result">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--dispute-result">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-credit" data-name="question-alimoney--payer-credit">
-					<h3 class="question__title">
-						Какая сумма задолженности?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="10000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--dispute-result">Далее</button>
-					<button type="button" class="question__button question__button--no question__button--stepper-alt" data-next="question-alimoney--dispute-result">Задолженности нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--dispute-result" data-name="question-alimoney--dispute-result">
-					<h3 class="question__title">
-						Опишите как вы считаете, как должен быть разрешен вопрос по алиментам (сумма, сроки, единовременные выплаты и т.д.)
-					</h3>
-					<textarea class="form-control" rows="5"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-alimoney--payer-children-amount" disabled>Далее</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--payer-children-amount" data-name="question-alimoney--payer-children-amount">
-					<h3 class="question__title">
-						Сколько детей у плательщика алиментов от иных отношений?
-					</h3>
-					<input
-						class="question-stepper"
-						value="1"
-						min="0"
-						step="1"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--your-additional-expenses">Далее</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--your-additional-expenses" data-name="question-alimoney--your-additional-expenses">
-					<h3 class="question__title">
-						Какие у вас дополнительные расходы на детей помимо обычного содержания?
-					</h3>
-					<textarea class="form-control" rows="5"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-alimoney--your-expenses-education" disabled>Далее</button>
-					<button type="button" class="question__button question__button--no question__button--textarea-alt" data-next="question-alimoney--maintenanse">Расходов нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--your-expenses-education" data-name="question-alimoney--your-expenses-education">
-					<h3 class="question__title">
-						Есть ли дополнительные расходы на образование?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="5000"
-						min="0"
-						step="500"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--your-expenses-rehabilitation">Далее</button>
-					<button type="button" class="question__button question__button--no question__button--stepper-alt" data-next="question-alimoney--your-expenses-rehabilitation">Нет расходов на образование</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--your-expenses-rehabilitation" data-name="question-alimoney--your-expenses-rehabilitation">
-					<h3 class="question__title">
-						Есть ли дополнительные расходы на лечение (реабилитацию)?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="5000"
-						min="0"
-						step="500"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--your-expenses-home">Далее</button>
-					<button type="button" class="question__button question__button--no question__button--stepper-alt" data-next="question-alimoney--your-expenses-home">Нет расходов на лечение</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--your-expenses-home" data-name="question-alimoney--your-expenses-home">
-					<h3 class="question__title">
-						Есть ли дополнительные расходы на жилье?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="10000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--your-expenses-children">Далее</button>
-					<button type="button" class="question__button question__button--no question__button--stepper-alt" data-next="question-alimoney--your-expenses-children">Нет расходов на жилье</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--your-expenses-children" data-name="question-alimoney--your-expenses-children">
-					<h3 class="question__title">
-						Есть ли иные дополнительные <br>расходы на детей?
-					</h3>
-					<textarea class="form-control" rows="3" placeholder="Опишите расходы"></textarea>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="10000"
-						min="0"
-						step="500"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-alimoney--little-children" disabled>Далее</button>
-					<button type="button" class="question__button question__button--no question__button--stepper-alt" data-next="question-alimoney--little-children">Расходов нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--maintenanse" data-name="question-alimoney--maintenanse">
-					<h3 class="question__title">
-						Претендуете ли вы на ваше содержание от второго супруга?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--little-children">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-money--jointly-property">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--little-children" data-name="question-alimoney--little-children">
-					<h3 class="question__title">
-						Вы беременны или находитесь в отпуске по уходу за ребенком до трех лет?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--maintenanse-disabled">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--maintenanse-disabled">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--maintenanse-disabled" data-name="question-alimoney--maintenanse-disabled">
-					<h3 class="question__title">
-						Вы осуществляете уход за общим ребенком инвалидом?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--you-disabled">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--you-disabled">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--you-disabled" data-name="question-alimoney--you-disabled">
-					<h3 class="question__title">
-						Вы стали нетрудоспособным до расторжения брака или в течение года с момента расторжения брака?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--you-need-help">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--you-need-help">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--you-need-help" data-name="question-alimoney--you-need-help">
-					<h3 class="question__title">
-						Вы нуждающийся бывший супруг, достигший пенсионного возраста не позднее, чем через 5 лет с момента расторжения брака, который длился более 10 лет?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-alimoney--maintenanse-amount">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-alimoney--maintenanse-amount">Нет</button>
-				</article>
-				<article class="question question-alimoney question-alimoney--maintenanse-amount" data-name="question-alimoney--maintenanse-amount">
-					<h3 class="question__title">
-						Какую сумму вы считаете приемлемой на свое содержание?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="30000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--jointly-property">Далее</button>
-				</article>
+        <article
+          id="question-money--repaired-estate"
+          class="question question-money question-money--repaired-estate"
+          data-name="question-money--repaired-estate"
+        >
+          <h3 class="question__title">
+            Есть ли такое недвижимое имущество, принадлежащее хоть одному
+            супругу, которое ремонтировалось или достраивалось в браке?
+          </h3>
+          <p class="question__subtitle">Укажите все</p>
+          <textarea class="form-control" rows="3"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-money--repaired-estate-cost"
+            disabled
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--textarea-alt"
+            data-next="question-credits--obligations"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-cost"
+          data-name="question-money--repaired-estate-cost"
+        >
+          <h3 class="question__title">
+            Какова стоимость данного <br />
+            имущества до ремонта?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="1000000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-additional-cost"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-additional-cost"
+          data-name="question-money--repaired-estate-additional-cost"
+        >
+          <h3 class="question__title">
+            Какова стоимость данного <br />
+            имущества после ремонта?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="1000000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-jointly"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-jointly"
+          data-name="question-money--repaired-estate-jointly"
+        >
+          <h3 class="question__title">
+            Сколько совместно нажитых денежных средств было вложено в ремонт
+            имущества
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="100000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-maternity"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-maternity"
+          data-name="question-money--repaired-estate-maternity"
+        >
+          <h3 class="question__title">
+            Сколько денежных средств мат. капитала было вложено в ремонт
+            имущества
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="100000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-wifes-personal"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-wifes-personal"
+          data-name="question-money--repaired-estate-wifes-personal"
+        >
+          <h3 class="question__title">
+            Сколько было вложено личных средств жены от продажи
+            <span class="question__title--tooltip tooltip--personal"
+              >личного имущества</span
+            >?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="100000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-money--repaired-estate-mans-personal"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-mans-personal"
+          data-name="question-money--repaired-estate-mans-personal"
+        >
+          <h3 class="question__title">
+            Сколько было вложено личных средств мужа от продажи
+            <span class="question__title--tooltip tooltip--personal"
+              >личного имущества</span
+            >?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="100000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-credit"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-credit"
+          data-name="question-money--repaired-estate-credit"
+        >
+          <h3 class="question__title">
+            Сколько было вложено кредитных средств из все еще не погашенных
+            кредитов?
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="100000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-money--repaired-estate-any"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-money question-money--repaired-estate-any"
+          data-name="question-money--repaired-estate-any"
+        >
+          <h3 class="question__title">
+            Есть ли еще недвижимое имущество, принадлежащее хоть одному супругу,
+            которое ремонтировалось или достраивалось в браке?
+          </h3>
+          <a
+            href="#question-money--repaired-estate"
+            class="question__anchor question__button--yes question__button--pager"
+            data-next="question-money--repaired-estate"
+            >Да</a
+          >
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-credits--obligations"
+          >
+            Нет
+          </button>
+        </article>
 
-				<article class="question question-money question-money--jointly-property" data-name="question-money--jointly-property">
-					<h3 class="question__title">
-						У вас существует спор относительно <br><span class="question__title--tooltip tooltip--jointly">совместно нажитого имущества</span>?
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-money--marriage-agreement">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-money--disput-moments">Нет</button>
-				</article>
-				<article class="question question-money question-money--disput-moments" data-name="question-money--disput-moments">
-					<h3 class="question__title">
-						Укажите какие спорные моменты существуют у вас при расторжении брака?
-					</h3>
-					<textarea class="form-control" rows="5" ></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-credits--your-contacts" disabled>Далее</button>
-					<!-- <button type="button" class="question__button question__button--yes question__button--textarea question__button--contacts question__button--complete" data-next="question-credits--your-contacts">Отправить анкету</button> -->
-				</article>
-				<article class="question question-money question-money--marriage-agreement" data-name="question-money--marriage-agreement">
-					<h3 class="question__title">
-						У вас был заключен брачный договор <br>до или во время брака?
-					</h3>
-					<button type="button"
-						class="question__button question__button--yes question__button--pager"
-						data-next="question-money--disput-moments"
-						>Да</button>
-					<button type="button"
-						class="question__button question__button--no question__button--pager"
-						data-next="question-money--jointly-property-list"
-						>Нет</button>
-				</article>
-				<article id="question-money--jointly-property-list" class="question question-money question-money--jointly-property-list" data-name="question-money--jointly-property-list">
-					<h3 class="question__title">
-						Укажите списком наименования <br>совместно нажитого имущества
-					</h3>
-					<textarea class="form-control" rows="5" placeholder="Квартира, дом, земельный участок, авто, денежные средстав, вклады, инвестсчета, доля в бизнесе, предметы роскоши, бытовая техника, домашние животные, скот"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-money--jointly-property-cost" disabled>Далее</button>
-				</article>
-				<article class="question question-money question-money--jointly-property-cost" data-name="question-money--jointly-property-cost">
-					<h3 class="question__title">
-						Укажите примерную рыночную стоимость совместно нажитого имущества
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="500000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--jointly-money">Далее</button>
-				</article>
-				<article class="question question-money question-money--jointly-money" data-name="question-money--jointly-money">
-					<h3 class="question__title">
-						Сколько совместно нажитых денежных средств было вложено в приобретение имущества?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--maternity-capital">Далее</button>
-				</article>
-				<article class="question question-money question-money--maternity-capital" data-name="question-money--maternity-capital">
-					<h3 class="question__title">
-						Сколько денежных средств мат. капитала было вложено в приобретение имущества
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--wifes-personal">Далее</button>
-				</article>
-				<article class="question question-money question-money--wifes-personal" data-name="question-money--wifes-personal">
-					<h3 class="question__title">
-						Сколько было вложено личных средств жены от продажи <span class="question__title--tooltip tooltip--personal">личного имущества</span>?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--mans-personal">Далее</button>
-				</article>
-				<article class="question question-money question-money--mans-personal" data-name="question-money--mans-personal">
-					<h3 class="question__title">
-						Сколько было вложено личных средств мужа от продажи <span class="question__title--tooltip tooltip--personal">личного имущества</span>?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--credit-money">Далее</button>
-				</article>
-				<article class="question question-money question-money--credit-money" data-name="question-money--credit-money">
-					<h3 class="question__title">
-						Сколько было вложено кредитных средств из все еще не погашенных кредитов?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="1000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--any-property">Далее</button>
-				</article>
-				<article class="question question-money question-money--any-property" data-name="question-money--any-property">
-					<h3 class="question__title">
-						Есть еще совместно нажитое имущество?
-					</h3>
-					<!-- <button type="button" class="question__button question__button--yes question__button--pager" data-next="question-money--jointly-property-list">Да</button> -->
-					<a href="#question-money--jointly-property-list" class="question__anchor question__button--yes question__button--pager" data-next="question-money--jointly-property-list">Да</a>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-money--repaired-estate">Нет</button>
-				</article>
+        <article
+          class="question question-credits question-credits--obligations"
+          data-name="question-credits--obligations"
+        >
+          <h3 class="question__title">
+            Есть ли у вас совместно нажитые обязательства — долги, кредиты,
+            ипотека
+          </h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-credits--obligations-target"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-credits--property-division"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          id="question-credits--property-division"
+          class="question question-credits question-credits--obligations-target"
+          data-name="question-credits--obligations-target"
+        >
+          <h3 class="question__title">
+            Наименования кредитов и на какие цели выдавался
+          </h3>
+          <p class="question__subtitle">Укажите все</p>
+          <textarea class="form-control" rows="3"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-credits--obligations-rest"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-credits question-credits--obligations-rest"
+          data-name="question-credits--obligations-rest"
+        >
+          <h3 class="question__title">
+            Остаток задолженности на момент прекращения ведения общего хозяйства
+          </h3>
+          <input
+            class="question-stepper"
+            data-suffix="₽"
+            value="50000"
+            min="0"
+            step="10000"
+            type="number"
+            inputmode="numeric"
+          />
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--stepper"
+            data-next="question-credits--obligations-payer"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-credits question-credits--obligations-payer"
+          data-name="question-credits--obligations-payer"
+        >
+          <h3 class="question__title">Кто является плательщиком кредита?</h3>
+          <textarea class="form-control" rows="3"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-credits--obligations-any"
+            disabled
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-credits question-credits--obligations-any"
+          data-name="question-credits--obligations-any"
+        >
+          <h3 class="question__title">Есть еще обязательства?</h3>
+          <!-- <button type="button" class="question__button question__button--yes question__button--pager" data-next="question-credits--obligations">Да</button> -->
+          <a
+            href="#question-credits--property-division"
+            class="question__anchor question__button--yes question__button--pager"
+            data-next="question-credits--property-division"
+            >Да</a
+          >
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-credits--property-division"
+          >
+            Нет
+          </button>
+        </article>
+        <article
+          class="question question-credits question-credits--property-division"
+          data-name="question-credits--property-division"
+        >
+          <h3 class="question__title">
+            Опишите как вы видите раздел имущества, кому что должно остаться в
+            каких долях, как должны быть распределены совместные обязательства?
+          </h3>
+          <textarea class="form-control" rows="5"></textarea>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--textarea"
+            data-next="question-credits--your-contacts"
+            disabled
+          >
+            Далее
+          </button>
+          <!-- <button type="button" class="question__button question__button--yes question__button--textarea question__button--complete" data-next="question-credits--your-contacts>Отправить анкету</button> -->
+        </article>
+        <article
+          class="question question-credits question-credits--your-contacts"
+          data-name="question-credits--your-contacts"
+        >
+          <h3 class="question__title">
+            Заполните, пожалуйста, контактные данные для отправки вам плана
+            развода
+          </h3>
+          <div class="question-input__fileds">
+            <div class="question-input__wrap question-input__wrap--name">
+              <input
+                class="question-input question-input--name"
+                name="user-name"
+                type="text"
+                placeholder="Ваше ФИО"
+              />
+            </div>
+            <div class="question-input__wrap question-input__wrap--tel">
+              <input
+                class="question-input question-input--phone"
+                name="user-tel"
+                type="tel"
+                placeholder="Ваш телефон"
+                maxlength="25"
+                minlength="10"
+                inputmode="numeric"
+              />
+            </div>
+            <div class="question-input__wrap question-input__wrap--email">
+              <input
+                class="question-input question-input--email"
+                name="user-email"
+                type="email"
+                placeholder="Ваш email"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--contacts"
+            data-next="question-credits--spouse-contacts"
+          >
+            Далее
+          </button>
+        </article>
+        <article
+          class="question question-credits question-credits--spouse-contacts"
+          data-name="question-credits--spouse-contacts"
+        >
+          <h3 class="question__title">
+            Заполните, пожалуйста, контактные данные вашего супруга и мы
+            отправим ему приглашение для обсуждения плана развода
+          </h3>
+          <div class="question-input__fileds">
+            <div class="question-input__wrap question-input__wrap--name">
+              <input
+                class="question-input question-input--name"
+                name="spouse-name"
+                type="text"
+                placeholder="ФИО супруга"
+              />
+            </div>
+            <div class="question-input__wrap question-input__wrap--tel">
+              <input
+                class="question-input question-input--phone"
+                name="spouse-tel"
+                type="tel"
+                placeholder="Телефон супруга"
+                maxlength="25"
+                minlength="10"
+                inputmode="numeric"
+              />
+            </div>
+            <div class="question-input__wrap question-input__wrap--email">
+              <input
+                class="question-input question-input--email"
+                name="spouse-email"
+                type="email"
+                placeholder="Email супруга"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--contacts question__button--complete"
+            data-next="question-credits--thanks"
+          >
+            Отправить анкету
+          </button>
+          <p class="question-privacy">
+            Нажимая на кнопку «Отправить анкету», я подтвержаю свое согласие с
+            <a href="./privacy.html">политикой конфиденциальности</a>
+          </p>
+        </article>
+        <article class="question question-credits question-credits--thanks">
+          <h3 class="question__title">Спасибо за заполнение анкеты!</h3>
+        </article>
+      </div>
+      <section class="questions-active divorce">
+        <article
+          class="question question-divorce question-divorce--plan question--visible question--current"
+          data-name="question-divorce--plan"
+        >
+          <h3 class="question__title">Вы планируете развод?</h3>
+          <button
+            type="button"
+            class="question__button question__button--yes question__button--pager"
+            data-next="question-divorce--relations"
+          >
+            Да
+          </button>
+          <button
+            type="button"
+            class="question__button question__button--no question__button--pager"
+            data-next="question-divorce--divorce-date"
+          >
+            Я уже в разводе
+          </button>
+        </article>
+      </section>
+    </main>
 
-				<article id="question-money--repaired-estate" class="question question-money question-money--repaired-estate" data-name="question-money--repaired-estate">
-					<h3 class="question__title">
-						Есть ли такое недвижимое имущество, принадлежащее хоть одному супругу, которое ремонтировалось или достраивалось в браке?
-					</h3>
-					<p class="question__subtitle">Укажите все</p>
-					<textarea class="form-control" rows="3"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-money--repaired-estate-cost" disabled>Да</button>
-					<button type="button" class="question__button question__button--no question__button--textarea-alt" data-next="question-credits--obligations">Нет</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-cost" data-name="question-money--repaired-estate-cost">
-					<h3 class="question__title">
-						Какова стоимость данного <br>
-						имущества до ремонта?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="1000000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-additional-cost">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-additional-cost" data-name="question-money--repaired-estate-additional-cost">
-					<h3 class="question__title">
-						Какова стоимость данного <br>
-						имущества после ремонта?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="1000000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-jointly">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-jointly" data-name="question-money--repaired-estate-jointly">
-					<h3 class="question__title">
-						Сколько совместно нажитых денежных средств было вложено в ремонт имущества
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="100000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-maternity">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-maternity" data-name="question-money--repaired-estate-maternity">
-					<h3 class="question__title">
-						Сколько денежных средств мат. капитала было вложено в ремонт имущества
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="100000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-wifes-personal">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-wifes-personal" data-name="question-money--repaired-estate-wifes-personal">
-					<h3 class="question__title">Сколько было вложено личных средств жены от продажи <span class="question__title--tooltip tooltip--personal">личного имущества</span>?</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="100000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-money--repaired-estate-mans-personal">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-mans-personal" data-name="question-money--repaired-estate-mans-personal">
-					<h3 class="question__title">
-						Сколько было вложено личных средств мужа от продажи <span class="question__title--tooltip tooltip--personal">личного имущества</span>?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="100000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-credit">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-credit" data-name="question-money--repaired-estate-credit">
-					<h3 class="question__title">
-						Сколько было вложено кредитных средств из все еще не погашенных кредитов?
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="100000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-money--repaired-estate-any">Далее</button>
-				</article>
-				<article class="question question-money question-money--repaired-estate-any" data-name="question-money--repaired-estate-any">
-					<h3 class="question__title">
-						Есть ли еще недвижимое имущество, принадлежащее хоть одному супругу, которое ремонтировалось или достраивалось в браке?
-					</h3>
-					<a href="#question-money--repaired-estate" class="question__anchor question__button--yes question__button--pager" data-next="question-money--repaired-estate">Да</a>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-credits--obligations">Нет</button>
-				</article>
+    <footer class="footer"></footer>
 
-				<article class="question question-credits question-credits--obligations" data-name="question-credits--obligations">
-					<h3 class="question__title">
-						Есть ли у вас совместно нажитые обязательства — долги, кредиты, ипотека
-					</h3>
-					<button type="button" class="question__button question__button--yes question__button--pager" data-next="question-credits--obligations-target">Да</button>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-credits--property-division">Нет</button>
-				</article>
-				<article id="question-credits--property-division" class="question question-credits question-credits--obligations-target" data-name="question-credits--obligations-target">
-					<h3 class="question__title">
-						Наименования кредитов и на какие цели выдавался
-					</h3>
-					<p class="question__subtitle">Укажите все</p>
-					<textarea class="form-control" rows="3"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-credits--obligations-rest" disabled>Далее</button>
-				</article>
-				<article class="question question-credits question-credits--obligations-rest" data-name="question-credits--obligations-rest">
-					<h3 class="question__title">
-						Остаток задолженности на момент прекращения ведения общего хозяйства
-					</h3>
-					<input
-						class="question-stepper"
-						data-suffix="₽"
-						value="50000"
-						min="0"
-						step="10000"
-						type="number"
-						inputmode="numeric">
-					<button type="button" class="question__button question__button--yes question__button--stepper" data-next="question-credits--obligations-payer">Далее</button>
-				</article>
-				<article class="question question-credits question-credits--obligations-payer" data-name="question-credits--obligations-payer">
-					<h3 class="question__title">
-						Кто является плательщиком кредита?
-					</h3>
-					<textarea class="form-control" rows="3"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-credits--obligations-any" disabled>Далее</button>
-				</article>
-				<article class="question question-credits question-credits--obligations-any" data-name="question-credits--obligations-any">
-					<h3 class="question__title">
-						Есть еще обязательства?
-					</h3>
-					<!-- <button type="button" class="question__button question__button--yes question__button--pager" data-next="question-credits--obligations">Да</button> -->
-					<a href="#question-credits--property-division" class="question__anchor question__button--yes question__button--pager" data-next="question-credits--property-division">Да</a>
-					<button type="button" class="question__button question__button--no question__button--pager" data-next="question-credits--property-division">Нет</button>
-				</article>
-				<article class="question question-credits question-credits--property-division" data-name="question-credits--property-division">
-					<h3 class="question__title">
-						Опишите как вы видите раздел имущества, кому что должно остаться в каких долях, как должны быть распределены совместные обязательства?
-					</h3>
-					<textarea class="form-control" rows="5"></textarea>
-					<button type="button" class="question__button question__button--yes question__button--textarea" data-next="question-credits--your-contacts" disabled>Далее</button>
-					<!-- <button type="button" class="question__button question__button--yes question__button--textarea question__button--complete" data-next="question-credits--your-contacts>Отправить анкету</button> -->
-				</article>
-				<article class="question question-credits question-credits--your-contacts" data-name="question-credits--your-contacts">
-					<h3 class="question__title">
-						Заполните, пожалуйста, контактные данные для отправки вам плана развода
-					</h3>
-					<div class="question-input__fileds">
-						<div class="question-input__wrap question-input__wrap--name">
-							<input class="question-input question-input--name" name="user-name" type="text" placeholder="Ваше ФИО">
-						</div>
-						<div class="question-input__wrap question-input__wrap--tel">
-							<input class="question-input question-input--phone" name="user-tel" type="tel" placeholder="Ваш телефон" maxlength="25" minlength="10" inputmode="numeric">
-						</div>
-						<div class="question-input__wrap question-input__wrap--email">
-							<input class="question-input question-input--email" name="user-email" type="email" placeholder="Ваш email" >
-						</div>
-					</div>
-					<button type="button" class="question__button question__button--yes question__button--contacts" data-next="question-credits--spouse-contacts">Далее</button>
-				</article>
-				<article class="question question-credits question-credits--spouse-contacts" data-name="question-credits--spouse-contacts">
-					<h3 class="question__title">
-						Заполните, пожалуйста, контактные данные вашего супруга и мы отправим ему приглашение для обсуждения плана развода
-					</h3>
-					<div class="question-input__fileds">
-						<div class="question-input__wrap question-input__wrap--name">
-							<input class="question-input question-input--name" name="spouse-name" type="text" placeholder="ФИО супруга">
-						</div>
-						<div class="question-input__wrap question-input__wrap--tel">
-							<input class="question-input question-input--phone" name="spouse-tel" type="tel" placeholder="Телефон супруга" maxlength="25" minlength="10" inputmode="numeric">
-						</div>
-						<div class="question-input__wrap question-input__wrap--email">
-							<input class="question-input question-input--email" name="spouse-email" type="email" placeholder="Email супруга" >
-						</div>
-					</div>
-					<button type="button" class="question__button question__button--yes question__button--contacts question__button--complete" data-next="question-credits--thanks">Отправить анкету</button>
-					<p class="question-privacy">Нажимая на кнопку «Отправить анкету», я подтвержаю свое согласие с <a href="./privacy.html">политикой конфиденциальности</a></p>
-				</article>
-				<article class="question question-credits question-credits--thanks">
-					<h3 class="question__title">
-						Спасибо за заполнение анкеты!
-					</h3>
-				</article>
-			</div>
-			<section class="questions-active divorce">
-				<article class="question question-divorce question-divorce--plan question--visible question--current" data-name="question-divorce--plan">
-					<h3 class="question__title">
-						Вы планируете развод?
-					</h3>
-					<button
-						type="button"
-						class="question__button question__button--yes question__button--pager"
-						data-next="question-divorce--relations"
-					>
-						Да
-				</button>
-					<button
-						type="button"
-						class="question__button question__button--no question__button--pager"
-						data-next="question-divorce--divorce-date"
-					>
-						Я уже в разводе
-					</button>
-				</article>
-			</section>
+    <div class="popups">
+      <div class="pop-jointly">
+        <p class="pop-jointly__desc">
+          Указывается только то имущество, кторое приобретено супругами по
+          сделакам купли-продажи и договорам долевого участия.
+        </p>
+        <p class="pop-jointly__desc">
+          Доходы от трудовой деятельности считаются совместно нажитыми деньгами
+          даже если один из супругов не работал.
+        </p>
+      </div>
+      <div class="pop-personal">
+        <p class="pop-pesonal__desc">
+          Личным имуществом считается до брачное имущество и имещетсво, хоть и
+          приобретенное в браке но по безвозмездным сделакам.
+        </p>
+      </div>
+    </div>
 
-		</main>
-
-		<footer class="footer"></footer>
-
-		<div class="popups">
-			<div class="pop-jointly">
-				<p class="pop-jointly__desc">Указывается только то имущество, кторое приобретено супругами по сделакам купли-продажи и договорам долевого участия.</p>
-				<p class="pop-jointly__desc">Доходы от трудовой деятельности считаются совместно нажитыми деньгами даже если один из супругов не работал.</p>
-			</div>
-			<div class="pop-personal">
-				<p class="pop-pesonal__desc">Личным имуществом считается до брачное имущество и имещетсво, хоть и приобретенное в браке но по безвозмездным сделакам.</p>
-			</div>
-		</div>
-
-		<script src="./js/jquery.min.js"></script>
-		<script src="./js/jquery.activity.min.js"></script>
-		<script src="./js/jquery.inputmask.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/bootstrap-datepicker.js"></script>
-		<script src="./js/bootstrap-input-spinner.js"></script>
-		<script src="./js/locales/bootstrap-datepicker.ru.js"></script>
-		<script src="./assets/poppa/poppa.js"></script>
-		<script src="./js/index.js"></script>
-	</body>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.activity.min.js"></script>
+    <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/bootstrap-input-spinner.js"></script>
+    <script src="./js/locales/bootstrap-datepicker.ru.js"></script>
+    <script src="./assets/poppa/poppa.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
